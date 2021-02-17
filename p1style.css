@@ -1,0 +1,275 @@
+/*CSS Reset*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+html {
+	scroll-behavior: smooth;
+}
+/*CSS Varibles*/
+:root {
+	--navbar-height: 59px;
+}
+
+/*Navigation BAr*/
+#navbar  {
+	display: flex;
+	align-items: center;
+	position: sticky;
+	top: 0px;
+
+}
+
+/*Navigation bar :Logo and Image */
+#logo {
+	margin: 10px 34px;
+	filter: invert(100%);
+	
+	}
+#logo img {
+	height: 35px;
+	margin: 15px 0px;
+
+}
+
+/*Navigation bar : List Styling*/
+
+
+
+#navbar::before {
+	content: "";
+	background-color: black;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.3
+}
+#navbar ul {
+	display: flex;
+}
+
+#navbar ul li {
+	/*color: white;*/
+	list-style: none;
+	font-size: 1.3em;
+
+}
+#navbar ul li a {
+	color: white;
+	display: block;
+	padding: 10px 60px;
+	border-radius: 20px;
+	text-decoration: none;
+
+}
+
+#navbar ul li a:hover{
+	color:black;
+	background-color: white;	
+ }
+  
+
+  /*Home Section*/
+
+  #home {
+  	display: flex;
+  	flex-direction: column;
+  	padding: 5px 230px;
+  	height: 470px;
+  	justify-content: center;
+  	align-items: center;
+  }
+
+ #home::before{
+  	content: "";
+	background: url('img/bg.jpg')no-repeat center center/cover;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	animation-name: slider;
+	animation-duration: 15s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+	height: 650px;
+	width:  100%;
+	z-index: -1;
+	opacity: 0.79
+  }
+  @keyframes slider {
+  	0% {
+  		background: url('img/ig1.jpg')no-repeat center center/cover;
+  	}
+  	50% {
+  		background: url('img/ig2.jpg')no-repeat center center/cover;
+  	}
+  	100% {
+  		background: url('img/ig3.jpg')no-repeat center center/cover;
+  	}
+  }
+
+  #home h1 {
+  	color: black;
+  	text-align: center;
+
+  }
+ #home p {
+ 	color: black;
+ 	font-size: 20px;
+ 	text-align: center;
+ 	font-family: 'Baloo Bhaina 2', cursive;
+ 	
+ }
+ /*Services Container*/
+#services {
+	margin: 10px;
+	display: flex;
+}
+#services .box {
+	border: 2px solid brown;
+	padding: 35px;
+	margin: 45px 20px;
+	border-radius: 23px;
+	background-color: #f2f2f2; 
+}
+#services .box img {
+	height: 160px;
+	display: block;
+	margin: auto ;
+	
+}
+/*Client Section*/
+#Client-section {
+	
+	position: relative;
+
+}
+#clients {
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+
+#client-section::before {
+	content:"";
+	position: absolute;
+	background: url();
+	width: 100%;
+	height:50%;
+	z-index: -1;
+	opacity: 0.5;
+}
+
+#clients img{
+	height: 150px; 
+	width: 250px;
+	margin: 30px;
+}
+ /*Contact Section*/
+ #contact {
+ 
+ }
+#contact::before {
+	content:"";
+	position: absolute;
+	background: url(img/ig1.jpg);
+	width: 100%;
+	height: 65%;
+	z-index: -1;
+	opacity: 0.5;
+}
+#contact-box  {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 14px;
+
+}
+#contact-box input,
+#contact-box textarea
+{
+	width: 98.6%;
+	height: 30%;
+	padding: 0.5rem;
+	border-radius: 9px;
+	font-size: 1.1rem;
+
+
+}
+#contact-box form {
+	width: 40%
+}
+#contact-box label {
+	font-size: 1.3rem;
+
+
+}
+#contact-box button {
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+	height: 40px;
+	width: 80px;
+	font-size: 20px;
+	background-color: transparent;
+	border: 2px solid black;
+	color: black;
+}
+#contact-box button:hover {
+	background-color: white;
+
+}
+footer {
+    background-color: black;
+    color:white; 
+    padding: 9px 20px;
+}
+
+ /*Utility  Classes*/
+
+ .h-primary {
+ 	font-size: 2.8em;
+ 	padding:  12px;
+ 	padding-top: 110px;
+
+ }
+
+  .h-primary1  {
+ 	font-size: 2.8em;
+ 	padding:  12px;
+ 	padding-top: 11px;
+
+ }
+  .h-primary2  {
+ 	font-size: 2.8em;
+ 	padding:  12px;
+ 	padding-top: 11px;
+
+ }
+  .h-secondary {
+ 	font-size: 1.9rem;
+ 	padding:  12px;
+ 	padding-top:70px;
+
+ }
+ .btn {
+ 	padding: 10px 20px;
+ 	font-size: 15px;
+ 	border: 2px solid white;
+ 	background-color: transparent;
+ 	color: white;
+ 	margin: 17px;
+ 	border-radius: 5px;
+ 	cursor: pointer;
+ }
+ .btn:hover {
+ 	background-color: white;
+ 	color: black;
+ 	border: 2px solid black;
+ }
+ .center {
+ 	text-align: center;
+ }
+ 
